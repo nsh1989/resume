@@ -1,0 +1,94 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "roboto", sans-serif;
+    background-color: #fcfcfc;
+}
+
+p,
+span {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+}
+h3 {
+    font-weight: 600;
+    font-size: 15px;
+}
+h2 {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 18px;
+}
+.button {
+    border-radius: 10px;
+    box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+}
+.button:hover{
+    transform: translateY(-5px);
+}
+.mt-24{
+    margin-top: 1rem;
+}
+.MuiDataGrid-footerContainer.css-17jjc08-MuiDataGrid-footerContainer {
+    display: none !important;
+}
+.MuiDataGrid-columnHeaders.css-f3jnds-MuiDataGrid-columnHeaders {
+    background: #f6f6f6 !important;
+}
+.css-1e2bxag-MuiDataGrid-root {
+    min-height: 100% !important;
+    max-height: max-content !important;
+}
+.css-1kwdphh-MuiDataGrid-virtualScrollerContent {
+    background-color: #fff;
+}
+.css-1yk1gt9-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root {
+    border-radius: 0;
+    background: #fff;
+    padding: 0;
+}
+.css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root.Mui-checked,
+.css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root.MuiCheckbox-indeterminate{
+    margin-left: 1rem;
+}
+.css-ffg8md-MuiNativeSelect-select-MuiInputBase-input-MuiOutlinedInput-input, .css-9ddj71-MuiInputBase-root-MuiOutlinedInput-root {
+    font-size: 0.7rem;
+}
+.css-8ewcdo-MuiInputBase-root-MuiOutlinedInput-root {
+    font-size: 0.7rem;
+    height:120px;
+}
+.css-ahj2mt-MuiTypography-root{
+    font-size: 0.5rem;
+}
+.MuiInputBase-root.MuiOutlinedInput-root.MuiInputBase-colorPrimary.MuiInputBase-formControl.css-1yk1gt9-MuiInputBase-root-MuiOutlinedInput-root-MuiSelect-root {
+    height: 41px;
+    border-radius: 3px;
+}
+.justify-end {
+    margin-top: 0.5rem;
+}
+.css-1t8l2tu-MuiInputBase-input-MuiOutlinedInput-input {
+    /*padding:19px 50px 16px 15px*/
+    padding: 16.5px 14px;
+}
+.css-1wc848c-MuiFormHelperText-root{
+    margin-left: 0;
+}
+
+#outlined-adornment-weight{
+    height: 0.5em;
+}
+.search-date-input div{
+    height: 45px;
+    margin:10px;
+}
+.search-date-input label{
+    font-size: 0.8em;
+    padding: 8px;
+}
