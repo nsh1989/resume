@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body {
+            color: black;
+            font-family : san-serif;
+        }
+
+        hr {
+            border-top : 3px solid;
+            color : lightgrey;
+        }
+
+        #introduction{
+            color : Orange
+        }
+
+        #skills{
+            color : Orange
+        }
+
+        #work-experience{
+            color : Orange
+        }
+
+    </style>
+</head>
+<body>
+<hr>
+<h3 id="introduction">Introduction</h3>
+<h4 id="-">남 승 현</h4>
+<ul>
+    <li>Amass Senior engineer<ul>
+        <li>보험사 부품 청구서 검증 API 서비스 구축</li>
+        <li>통합 인증 서비스 구축</li>
+        <li>작업자용 보험사 이미지 부품 청구서 작업 페이지 구축</li>
+        <li>관리자 로그 확인용 웹 페이지 구축</li>
+    </ul>
+    </li>
+    <li>Back-end Developer 4년 / Game Developer 1</li>
+</ul>
+<hr>
+<h3 id="work-experience">Work Experience</h3>
+<ul>
+    <li><h4 id="amass">Amass</h4>
+        <ul>
+            <li>2021.12.01 ~ 현재</li>
+            <li>Senior Engineer</li>
+            <li><p>Parts Validation System 개발</p>
+                <ul>
+                    <li>project : 보험사 부품 청구서 검증 서비스</li>
+                    <li>Language: Java, Python</li>
+                    <li>Database : MariaDB, MongoDB</li>
+                    <li>Framework: Spring Boot, Django</li>
+                    <li>개요<ul>
+                        <li>정비소나 부품업체로부터 받은 부품 청구서를 보험사로부터 받아 검증 결과 전송.<ul>
+                            <li>처리해야할 부품 청구서의 종류는 아래와 같다.<ul>
+                                <li>디지털화되어 보험사 시스템에 입력된 일반 청구서</li>
+                                <li>아날로그 방식으로 청구된 이미지 또는 팩스 청구서<ul>
+                                    <li>해당 청구서는 다양한 포맷이 존재한다.</li>
+                                    <li>OCR로 청구 이미지를 디지털화</li>
+                                </ul>
+                                </li>
+                            </ul>
+                            </li>
+                        </ul>
+                        </li>
+                    </ul>
+                    </li>
+                    <li><p>성과</p>
+                        <ul>
+                            <li>DB손해보험<ul>
+                                <li>본 계약<ul>
+                                    <li>2022년 10월부터 사용 3.75억원 매출 발생</li>
+                                </ul>
+                                </li>
+                            </ul>
+                            </li>
+                            <li>KB손해보험, 삼성화재, 한화손해보험<ul>
+                                <li>CFR 진행</li>
+                            </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><p>주요 업무</p>
+                        <ul>
+                            <li>Junior Engineer Support</li>
+                            <li><p>개발 및 유지보수</p>
+                                <ul>
+                                    <li>Java API Server<ul>
+                                        <li>Framework : Spring boot 사용</li>
+                                        <li>개요<ul>
+                                            <li>REST API</li>
+                                            <li>Third Party System Integration<ul>
+                                                <li>부품 검증 System API 연동</li>
+                                                <li>카카오 로그인</li>
+                                                <li>Error 알림 텔레그램 연동</li>
+                                                <li>보험사 API 연동</li>
+                                            </ul>
+                                            </li>
+                                            <li>서버 구동 환경별 Configuration 자동화</li>
+                                            <li>Error Report System 개발 (Fast Failover)</li>
+                                            <li>Logging (MongoDB) System 개발</li>
+                                        </ul>
+                                        </li>
+                                    </ul>
+                                    </li>
+                                    <li><p>SSO system</p>
+                                        <ul>
+                                            <li>Framework : Spring boot 사용</li>
+                                            <li>개요<ul>
+                                                <li>카카오 인증 API 연동</li>
+                                                <li>사용자 Group 관리 개발</li>
+                                                <li>사용자 인증 API 개발</li>
+                                            </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li><p>Python OCR Server</p>
+                                        <ul>
+                                            <li>Framework : Django 사용</li>
+                                            <li>개요<ul>
+                                                <li>REST API</li>
+                                                <li>Third Party System Integration<ul>
+                                                    <li>OCR API</li>
+                                                </ul>
+                                                </li>
+                                                <li>Cron Job<ul>
+                                                    <li>State 패턴을 활용하여 청구된 이미지 견적서를 어떻게 처리할해야될지 정리</li>
+                                                </ul>
+                                                </li>
+                                                <li>사용자 입력 화면<ul>
+                                                    <li>OCR 데이터 검증용 사용자 화면</li>
+                                                </ul>
+                                                </li>
+                                                <li>Logging<ul>
+                                                    <li>Error Handler</li>
+                                                </ul>
+                                                </li>
+                                                <li>Authentication</li>
+                                                <li>환경별 Profile 자동화<ul>
+                                                    <li>서버 구동 환경별 자동 설정</li>
+                                                </ul>
+                                                </li>
+                                            </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>Python 부품 Crawler 개발</li>
+                                    <li><p>개요</p>
+                                        <ul>
+                                            <li>부품 수집용 Crawler 설계 및 개발<ul>
+                                                <li>Template pattern 사용</li>
+                                            </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li><p>Javscript Log Page</p>
+                                        <ul>
+                                            <li>Framework: NextJS</li>
+                                            <li>개요<ul>
+                                                <li>서버 구동 환경별 Configuration 자동화</li>
+                                                <li>화면 설계 및 사용자 Component 개발</li>
+                                            </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+    <li><h4 id="dat-korea">DAT Korea</h4>
+        <ul>
+            <li>2020.12 ~ 2021.12</li>
+            <li>Freelancer</li>
+            <li>성과<ul>
+                <li>DB손해보험<ul>
+                    <li>CFR 진행</li>
+                </ul>
+                </li>
+            </ul>
+            </li>
+            <li>업무<ul>
+                <li>개발 및 유지보수<ul>
+                    <li>API Server<ul>
+                        <li>JAVA : Spring Boot</li>
+                        <li>DAT AI 견적 시스템 연동 및 Process 자동화 설계 및 개발</li>
+                    </ul>
+                    </li>
+                    <li>부품 리서치<ul>
+                        <li>Python</li>
+                    </ul>
+                    </li>
+                </ul>
+                </li>
+            </ul>
+            </li>
+        </ul>
+    </li>
+    <li><h4 id="uproot">Uproot</h4>
+        <ul>
+            <li>2020.01 ~ 2020.12</li>
+            <li>사원</li>
+            <li>업무<ul>
+                <li>보안 프로그램 클라인트 개발 및 유지보수 (C++, MFC)</li>
+                <li>모의 해킹 교육용 웹 솔루션 개발, 유지보수 및 프로젝트 관리</li>
+            </ul>
+            </li>
+        </ul>
+    </li>
+    <li><h4 id="-">어바너스</h4>
+        <ul>
+            <li>Freelancer</li>
+            <li>업무 자동화 (python, git, pycharm)</li>
+            <li>Crawler 개발 (python, git, pycharm)</li>
+        </ul>
+    </li>
+    <li><h4 id="-">하자드게임즈</h4>
+        <ul>
+            <li>2018.11 ~ 2019.08</li>
+            <li>사원</li>
+            <li>업무<ul>
+                <li>게임 서버 개발 및 유지보수 (C#, .net, Jenkins, GCP, SVN)</li>
+                <li>게임 관리자 웹 개발 및 유지보수 (C#, .net, Jenkins, GCP, SVN)</li>
+                <li>클라이언트 개발 및 유지보수 (Unity, SVN)</li>
+                <li>게임기획</li>
+            </ul>
+            </li>
+        </ul>
+    </li>
+</ul>
+<hr>
+<h3 id="skills">Skills</h3>
+<ul>
+    <li><h4 id="java">Java</h4>
+        <ul>
+            <li>Spring Boot</li>
+        </ul>
+    </li>
+    <li><h4 id="python">Python</h4>
+        <ul>
+            <li>Django</li>
+        </ul>
+    </li>
+    <li><h4 id="javascript">Javascript</h4>
+        <ul>
+            <li>Node.js</li>
+            <li>ReactJS</li>
+            <li>NextJS</li>
+        </ul>
+    </li>
+    <li><h4 id="c-c-">C/C++</h4>
+        <ul>
+            <li>MFC</li>
+        </ul>
+    </li>
+    <li><h4 id="mongodb">MongoDB</h4>
+    </li>
+    <li><h4 id="mysql">MySql</h4>
+    </li>
+</ul>
+<hr>
+
+</body>
+</html>
