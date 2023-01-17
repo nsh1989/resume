@@ -3,7 +3,7 @@ import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import PhoneIphoneIcon from '@mui/icons-material/PhoneIphone';
 import EmailIcon from '@mui/icons-material/Email';
-import {Box, Paper, Typography} from "@mui/material";
+import {Box, Grid, Paper, Typography} from "@mui/material";
 import DevIcon from "devicon-react-svg"
 import Link from "next/link";
 
@@ -37,20 +37,44 @@ export default function Home() {
         <div className={styles.grid}>
           <a href="#" className={styles.card}>
             <h2>Skills &rarr;</h2>
-            <DevIcon icon="java" style={{width:"40px"}}/>
-            <DevIcon icon="python" style={{width:"40px"}}/>
-            <DevIcon icon="django" style={{width:"40px"}}/>
-            <DevIcon icon="javascript" style={{width:"40px"}}/>
-            <DevIcon icon="react" style={{width:"40px"}}/>
-            <DevIcon icon="nodejs" style={{width:"40px"}}/>
-            <DevIcon icon="mysql" style={{width:"40px"}}/>
-            <DevIcon icon="mongodb" style={{width:"40px"}}/>
-            <DevIcon icon="git" style={{width:"40px"}}/>
-            <DevIcon icon="jira" style={{width:"40px"}}/>
-            <DevIcon icon="docker" style={{width:"40px"}}/>
-            <DevIcon icon="azure" style={{width:"40px"}}/>
-            <DevIcon icon="aws" style={{width:"40px"}}/>
-            <DevIcon icon="nginx" style={{width:"40px"}}/>
+            <Grid container spacing={2}>
+              <Grid item xs={2}>
+                <DevIcon icon="java" style={{width:"30px"}}/>
+              </Grid>
+              <Grid item xs={2}>
+                <DevIcon icon="python" style={{width:"30px"}}/>
+              </Grid>
+              <Grid item xs={2}>
+                <DevIcon icon="django" style={{width:"30px"}}/>
+              </Grid>
+              <Grid item xs={2}>
+                <DevIcon icon="javascript" style={{width:"30px"}}/>
+              </Grid>
+              <Grid item xs={2}>
+                <DevIcon icon="react" style={{width:"30px"}}/>
+              </Grid>
+              <Grid item xs={2}>
+                <DevIcon icon="nodejs" style={{width:"30px"}}/>
+              </Grid>
+              <Grid item xs={2}>
+                <DevIcon icon="mysql" style={{width:"30px"}}/>
+              </Grid>
+              <Grid item xs={2}>
+                <DevIcon icon="mongodb" style={{width:"30px"}}/>
+              </Grid>
+              <Grid item xs={2}>
+                <DevIcon icon="git" style={{width:"30px"}}/>
+              </Grid>
+              <Grid item xs={2}>
+                <DevIcon icon="docker" style={{width:"30px"}}/>
+              </Grid>
+              <Grid item xs={2}>
+                <DevIcon icon="aws" style={{width:"30px"}}/>
+              </Grid>
+              <Grid item xs={2}>
+                <DevIcon icon="nginx" style={{width:"30px"}}/>
+              </Grid>
+            </Grid>
           </a>
 
           <Link href="/WorkExperience" className={styles.card}>

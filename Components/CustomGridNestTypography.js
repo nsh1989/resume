@@ -1,6 +1,6 @@
 import {FormControl, FormHelperText, Grid, Typography} from "@mui/material";
 
-function ListTypography({label, value}){
+function ListTypography({label, value}) {
     const isMulti = (value != null && value.length > 1) ? true : false;
     console.log(value)
     return (
@@ -18,19 +18,22 @@ function ListTypography({label, value}){
                 label === 'devs' ?
                     <div>
                         <Typography id="outlined-weight-helper-text"
-                                        style={{'font-size': '5px', 'margin': '2px'}}
+                                    style={{'font-size': '5px', 'margin': '2px'}}
                         >
-                        기술 : {value}</Typography>
+                            기술 : {value}</Typography>
                     </div>
-                 : null
+                    : null
             }
             {
-                label === 'detail' && value.length > 0?
-                    value.map( item =>
-                        <Typography variant="caption" style={{"word-break": "normal", 'font-size': '5px', 'margin': '2px'}}>
-                            - {item}
-                        </Typography>)
-                     : null
+                label === 'detail' && value.length > 0 ?
+                    value.map(item =>
+                        <div>
+                            <Typography variant="caption"
+                                        style={{"word-break": "normal", 'font-size': '5px', 'margin': '2px'}}>
+                                - {item}
+                            </Typography>
+                        </div>)
+                    : null
             }
         </>
     )
@@ -44,13 +47,16 @@ export default function CustomGridNestTypography({label, value, xs, isMulti = fa
                 <FormHelperText id="outlined-weight-helper-text">
                     {label}
                 </FormHelperText>
-                {
-                    isMulti ?
-                        value.map( item =>
-                            Object.keys(item).map( (key) =>
-                                <ListTypography label={key} value={item[key]}/>
-                            )) : null
-                }
+                <Grid container spacing={5}>
+                        {
+                            isMulti ?
+                                value.map(item =>
+                                    <Grid item xs={6}>
+                                        {Object.keys(item).map((key) =>
+                                        <ListTypography label={key} value={item[key]}/>
+                                    )}</Grid>) : null
+                        }
+                </Grid>
             </FormControl>
         </Grid>
     )

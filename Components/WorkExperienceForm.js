@@ -46,7 +46,7 @@ export default function WorkExperienceForm({values}) {
                                                             label={"성과"} value={values.results}
                                                             xs={12} isMulti={true}/> : null
                                                 }
-                                                <Grid container spacing={1} direction="row">
+                                                <Grid container spacing={1} direction="column">
                                                 {
                                                     values.project_tasks != null && values.project_tasks.length > 0 ?
                                                         <CustomGridNestTypography
