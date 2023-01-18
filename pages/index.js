@@ -6,6 +6,7 @@ import EmailIcon from '@mui/icons-material/Email';
 import {Box, Grid, Paper, Typography} from "@mui/material";
 import DevIcon from "devicon-react-svg"
 import Link from "next/link";
+import {Web} from "@mui/icons-material";
 
 
 
@@ -23,15 +24,8 @@ export default function Home() {
           Welcome to <a href="#">My Resume</a>
         </h1>
 
-        <Box className={styles.box}>
-            <h2>5년차 Back-end 개발자</h2>
-        </Box>
-        <Box className={styles.box}>
-          <PhoneIphoneIcon/><code className={styles.code}> 010-2628-2096 </code>
-        </Box>
-        <Box className={styles.box}>
-          <EmailIcon/><code className={styles.code}> cakor2096@naver.com </code>
-        </Box>
+
+
 
 
         <div className={styles.grid}>
@@ -81,6 +75,17 @@ export default function Home() {
             <h2>Work Experience &rarr;</h2>
             <p style={{margin:15}}>Amass Senior Engineer</p>
             <p style={{margin:15}}>5년차 Back-end 개발자</p>
+          </Link>
+
+          <Link href="/About" className={styles.card}>
+            <h2>About me &rarr;</h2>
+            <p>
+              <PhoneIphoneIcon/>010-2628-2096
+            </p>
+            <p>
+              <EmailIcon/>cakor2096@naver.com
+            </p>
+            <Web/><a href={"https://my-nsh1989.vercel.app/"}>https://my-nsh1989.vercel.app/</a>
           </Link>
 
           {/*<a*/}
