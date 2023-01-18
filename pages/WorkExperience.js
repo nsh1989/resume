@@ -22,7 +22,7 @@ export default function WorkExperience() {
             >
             {
                 formik.values.map(
-                    (item) => <WorkExperienceForm values={item}/>
+                    (item, index) => <WorkExperienceForm key={index} values={item}/>
                 )
             }
             </Grid>

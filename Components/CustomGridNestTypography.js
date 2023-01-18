@@ -26,9 +26,9 @@ function ListTypography({label, value}) {
             }
             {
                 label === 'detail' && value.length > 0 ?
-                    value.map(item =>
-                        <div>
-                            <Typography variant="caption"
+                    value.map((item, index) =>
+                        <div key={index}>
+                            <Typography key={index} variant="caption"
                                         style={{"word-break": "normal", 'font-size': '5px', 'margin': '2px'}}>
                                 - {item}
                             </Typography>
@@ -50,10 +50,10 @@ export default function CustomGridNestTypography({label, value, xs, isMulti = fa
                 <Grid container spacing={1}>
                         {
                             isMulti ?
-                                value.map(item =>
-                                    <Grid item xs={6}>
-                                        {Object.keys(item).map((key) =>
-                                        <ListTypography label={key} value={item[key]}/>
+                                value.map((item, index) =>
+                                    <Grid key={index} item xs={6}>
+                                        {Object.keys(item).map((key, index) =>
+                                        <ListTypography key={index} label={key} value={item[key]}/>
                                     )}</Grid>) : null
                         }
                 </Grid>

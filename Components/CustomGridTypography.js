@@ -9,8 +9,8 @@ export default function CustomGridTypography({label, value, xs, isMulti = false}
                 </FormHelperText>
                 {
                     isMulti ?
-                    value.map( item =>
-                        <Typography variant="caption" style={{"word-break": "normal"}}>
+                    value.map( (item, index) =>
+                        <Typography key={index} variant="caption" style={{"word-break": "normal"}}>
                         - {item}
                     </Typography>) :
                     <Typography variant="caption" style={{"word-break": "normal"}}>

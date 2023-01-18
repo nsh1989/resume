@@ -10,7 +10,7 @@ export default function CustomGridList({label, value, xs}){
                 <List>
                 {
                     value.map((item, index) =>
-                        <Typography>{index+1}. {item}</Typography>
+                        <Typography key={{index}}>{index+1}. {item}</Typography>
                     )
                 }
                 </List>
