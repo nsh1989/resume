@@ -32,7 +32,7 @@ export default function WorkExperienceForm({values}) {
                                     </Grid>
                                     <Grid item xs={8}>
                                         <div>
-                                            <Grid container spacing={1}>
+                                            <Grid container spacing={2}>
                                                 <Grid item xs={12}>
                                                     <h5>
                                                         {values.title}

@@ -43,11 +43,11 @@ export default function CustomGridNestTypography({label, value, xs, isMulti = fa
     return (
 
         <Grid item xs={xs}>
-            <FormControl variant="outlined" style={{width: "100%"}}>
+            <FormControl variant="outlined" style={{width: "100%", margin:"15px"}}>
                 <FormHelperText id="outlined-weight-helper-text">
                     {label}
                 </FormHelperText>
-                <Grid container spacing={5}>
+                <Grid container spacing={1}>
                         {
                             isMulti ?
                                 value.map(item =>
