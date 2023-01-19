@@ -29,54 +29,6 @@ export default function Home() {
 
 
         <div className={styles.grid}>
-          <a href="#" className={styles.card}>
-            <h2>Skills &rarr;</h2>
-            <Grid container spacing={2}>
-              <Grid item xs={2}>
-                <DevIcon icon="java" style={{width:"30px"}}/>
-              </Grid>
-              <Grid item xs={2}>
-                <DevIcon icon="python" style={{width:"30px"}}/>
-              </Grid>
-              <Grid item xs={2}>
-                <DevIcon icon="django" style={{width:"30px"}}/>
-              </Grid>
-              <Grid item xs={2}>
-                <DevIcon icon="javascript" style={{width:"30px"}}/>
-              </Grid>
-              <Grid item xs={2}>
-                <DevIcon icon="react" style={{width:"30px"}}/>
-              </Grid>
-              <Grid item xs={2}>
-                <DevIcon icon="nodejs" style={{width:"30px"}}/>
-              </Grid>
-              <Grid item xs={2}>
-                <DevIcon icon="mysql" style={{width:"30px"}}/>
-              </Grid>
-              <Grid item xs={2}>
-                <DevIcon icon="mongodb" style={{width:"30px"}}/>
-              </Grid>
-              <Grid item xs={2}>
-                <DevIcon icon="git" style={{width:"30px"}}/>
-              </Grid>
-              <Grid item xs={2}>
-                <DevIcon icon="docker" style={{width:"30px"}}/>
-              </Grid>
-              <Grid item xs={2}>
-                <DevIcon icon="aws" style={{width:"30px"}}/>
-              </Grid>
-              <Grid item xs={2}>
-                <DevIcon icon="nginx" style={{width:"30px"}}/>
-              </Grid>
-            </Grid>
-          </a>
-
-          <Link href="/WorkExperience" className={styles.card}>
-            <h2>Work Experience &rarr;</h2>
-            <p style={{margin:15}}>Amass Senior Engineer</p>
-            <p style={{margin:15}}>5년차 Back-end 개발자</p>
-          </Link>
-
           <Link href="/About" className={styles.card}>
             <h2>About me &rarr;</h2>
             <p>
@@ -85,8 +37,16 @@ export default function Home() {
             <p>
               <EmailIcon/>cakor2096@naver.com
             </p>
-            <Web/><a href={"https://my-nsh1989.vercel.app/"}>https://my-nsh1989.vercel.app/</a>
+            {/*<Web/><a href="https://my-nsh1989.vercel.app/">https://my-nsh1989.vercel.app/</a>*/}
           </Link>
+
+          <Link href="/WorkExperience" className={styles.card}>
+            <h2>Work Experience &rarr;</h2>
+            <p style={{margin:15}}>Amass Senior Engineer</p>
+            <p style={{margin:15}}>5년차 Back-end 개발자</p>
+          </Link>
+
+
 
           {/*<a*/}
           {/*  href="https://github.com/vercel/next.js/tree/canary/examples"*/}
