@@ -3,6 +3,7 @@ import styles from "../styles/Home.module.css";
 import React from "react";
 import CustomGridTypography from "../Components/CustomGridTypography";
 import DevIcon from "devicon-react-svg";
+import CustomGridTypography2 from "../Components/CustomGridTypography2";
 
 export default function About() {
     const cert_list = [
@@ -35,7 +36,7 @@ export default function About() {
                                     <CustomGridTypography label={"E-MAIL"} value={"cakor2096@naver.com"} xs={6}/>
                                     <CustomGridTypography label={"최종 학력"} value={"학사"} xs={6}/>
                                     <CustomGridTypography label={"전공"} value={"컴퓨터 공학"} xs={6}/>
-                                    <CustomGridTypography label={"자격증"} value= {cert_list} isMulti={true} xs={12}/>
+                                    <CustomGridTypography2 label={"자격증"} value= {cert_list} isMulti={true} xs={12}/>
                                 </Grid>
                             </div>
 
