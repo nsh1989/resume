@@ -92,3 +92,14 @@ h2 {
     font-size: 0.8em;
     padding: 8px;
 }
+
+.custom-label {
+    font-weight: 800;
+    color:#050572d6;
+}
+.Home_worktitle__HHhhA:first-letter{
+    color:#050572d6;
+}
+.list-items {
+    margin-left: .5rem;
+}

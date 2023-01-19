@@ -5,7 +5,11 @@ import CustomGridTypography from "../Components/CustomGridTypography";
 import DevIcon from "devicon-react-svg";
 
 export default function About() {
-
+    const cert_list = [
+        {'name': '정보처리기사', 'date':'2016.05'},
+        {'name': 'CCNA', 'date':'2016.02'},
+        {'name': '네트워크관리사2급', 'date':'2015.10'},
+    ]
     return (
         <>
             <h2 className={styles.worktitle}>
@@ -25,19 +29,13 @@ export default function About() {
                                 justifyContent: 'center',
                             }}>
                                 <Grid container spacing={3}>
-                                    <CustomGridTypography value={"남승현"} xs={6}/>
-                                    <CustomGridTypography value={"만 33세"} xs={6}/>
+                                    <CustomGridTypography label={"이름"} value={"남승현"} xs={6}/>
+                                    <CustomGridTypography label={"나이"} value={"만 33세"} xs={6}/>
                                     <CustomGridTypography label={"핸드폰"} value={"010-2628-2096"} xs={6}/>
                                     <CustomGridTypography label={"E-MAIL"} value={"cakor2096@naver.com"} xs={6}/>
                                     <CustomGridTypography label={"최종 학력"} value={"학사"} xs={6}/>
                                     <CustomGridTypography label={"전공"} value={"컴퓨터 공학"} xs={6}/>
-                                    <CustomGridTypography label={"자격증"} xs={12}/>
-                                    <CustomGridTypography value={"정보처리기사"} xs={6}/>
-                                    <CustomGridTypography value={"2016.05"} xs={6}/>
-                                    <CustomGridTypography value={"CCNA"} xs={6}/>
-                                    <CustomGridTypography value={"2016.02"} xs={6}/>
-                                    <CustomGridTypography value={"네트워크관리사2급"} xs={6}/>
-                                    <CustomGridTypography value={"2015.10"} xs={6}/>
+                                    <CustomGridTypography label={"자격증"} value= {cert_list} isMulti={true} xs={12}/>
                                 </Grid>
                             </div>
 

@@ -4,14 +4,14 @@ export default function CustomGridTypography({label, value, xs, isMulti = false}
     return (
         <Grid item xs={xs}>
             <FormControl variant="outlined" style={{width: "100%"}}>
-                <FormHelperText id="outlined-weight-helper-text">
+                <FormHelperText className="custom-label" id="outlined-weight-helper-text">
                     {label}
                 </FormHelperText>
                 {
                     isMulti ?
-                    value.map( (item, index) =>
-                        <Typography key={index} variant="caption" style={{"word-break": "normal"}}>
-                        - {item}
+                    value.map( (item) =>
+                        <Typography variant="caption" className={'list-items'}>
+                        - {item.name} &nbsp; {item.date}
                     </Typography>) :
                     <Typography variant="caption" style={{"word-break": "normal"}}>
                         {value}
